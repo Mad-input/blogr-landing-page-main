@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('./variables.css');
+
+* {
+  padding    : 0;
+  margin     : 0;
+  box-sizing : border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  min-width : 100vw;
+  min-height: 100vh;
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+._next header {
+  background: url('../images/bg-pattern-intro-desktop.svg'),
+    -moz-linear-gradient(to right, var(--Very-light-red), var(--light-red));
+  background-position: center;
+  padding            : 50px;
+
+  border-radius: 0 0 0 var(--rounded);
+
+  display       : flex;
+  align-items   : center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.heading {
+  color: var(--very-dark-blue);
+}
+
+
+
+/* ? ========== nav ========== */
+
+._next .nav {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+
+  width : 90%;
+  margin: 0 auto;
+}
+
+._next .nav .nav-list {
+  display    : flex;
+  align-items: center;
+  gap        : 20px;
+}
+
+._next .nav .nav-list .list-item {
+  list-style: none;
+  position: relative;
+}
+
+._next .nav .nav-list .list-item .submenu {
+  scale: 0;
+  opacity: 0;
+  list-style: none;
+  top: 25px;
+  left: 0;
+  position: absolute;
+  background: var(--white);
+  padding: 15px ;
+  width: 130px;
+  border-radius: 5px;
+
+  transition: .3s;
+}
+
+._next .nav .nav-list .list-item .submenu li {
+  line-height: 30px;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+._next .nav .nav-list .list-item:hover .submenu {
+  scale: 1;
+  opacity: 1;
+}
+
+
+._next .nav .nav-list .list-item .submenu li:hover {
+  font-weight: bold;
+}
+
+._next .nav .nav-list .list-item .logo {
+  margin-right: 40px;
+}
+
+._next .nav .nav-list .list-item .logo img {
+  width: 80px;
+}
+
+._next .nav .nav-list .list-item a {
+  font-weight    : bold;
+  font-size      : 14px;
+  text-decoration: none;
+  color          : var(--white);
+  opacity        : .7;
+}
+._next .nav .nav-list .list-item a img {
+  transition: .3s;
+}
+
+._next .nav .nav-list .list-item:hover a {
+  text-decoration: underline;
+}
+
+._next .nav .nav-list .list-item:hover a img {
+  transform: rotate(180deg);
+}
+
+/* ? ========== nav opt bnt ========== */
+
+.btn {
+  border       : none;
+  border-radius: var(--rounded-btn);
+  width        : 120px;
+  height       : 40px;
+
+  font-weight: bold;
+  font-size  : 13px;
+
+  color     : var(--white);
+  cursor    : pointer;
+  transition: .1s;
+}
+
+.btn.btn-login {
+  background: none;
+  opacity   : .7;
+}
+
+.btn.btn-sign {
+  background: var(--white);
+  color     : var(--Light-red);
+}
+
+.btn.btn-sign:hover {
+  background: var(--very-dark-red);
+  color     : var(--white);
+}
+
+/* ? ========== banner header ========== */
+
+._next .banner {
+  margin: 50px 0;
+
+}
+
+._next .banner .banner-text {
+  color      : #fff;
+  text-align : center;
+  font-size  : 18px;
+  font-family: 'Overpass', sans-serif;
+  margin     : 20px;
+}
+
+._next .banner .banner-text strong {
+  color      : #fff;
+  padding    : 20px 0;
+  font-weight: 300;
+  display    : block;
+  font-size  : 50px;
+}
+
+._next .banner .banner-btns {
+  text-align: center;
+}
+
+._next .banner .btn-learn {
+  background: none;
+  border: 1px solid var(--white);
+}
+
+._next .banner .btn-learn:hover {
+  background: var(--white);
+  color     : var(--very-dark-red)
+}
+
+._next .banner .btn-banner {
+  margin: 20px 10px;
+}
+
+._next .section-body {
+  margin: 50px 0;
+  padding: 70px 50px;
+}
+
+._next .section-body .content-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2, auto);
+  place-items: center;
+}
+
+._next .section-body .content-section .image-banner {
+  grid-row: span 2;
+}
+
+._next .section-1 .content-section .image-banner img {
+  width: 630px;
+  vertical-align: top;
+  transform: scale(1.3) translateX(130px);
+  /* margin-top: -66px; */
+}
+
+._next .section-body .title-section {
+  font-family: 'overpass', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+._next .section-body .content-section .section-paragraph {
+  font-size: 16px;
+  text-align: left;
+  line-height: 25px;
+  color: var(--blackt);
+  padding: 0 50px;
+  /* opacity: .7; */
+}
+
+._next .section-body 
+.content-section 
+.section-paragraph .paragraph-title {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+._next .section-2 .content-section .image-banner img {
+  width: 630px;
+  vertical-align: top;
+  transform: scale(1.3) translateX(-100px);
+  /* margin-top: -66px; */
+}
+
+._next .body-banner {
+  background: url('../images/bg-pattern-circles.svg'),
+    -moz-linear-gradient(to right, var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
+  background-repeat: no-repeat;
+  background-position: left bottom;
+
+  display: flex;
+  align-items    : center;
+  justify-content: center;
+  padding: 0 50px;
+  margin: 100px 0;
+  height: 370px;
+
+  border-radius: 0 var(--rounded) 0 var(--rounded);
+}
+
+._next .body-banner .paragraph-body-banner {
+  color: var(--whitet);
+  font-family: 'Overpass', sans-serif;
+  width: 500px;
+  line-height: 25px;
+  margin-left: 20px;
+}
+
+._next .body-banner .paragraph-body-banner .paragraph-title {
+  display: block;
+  font-size: 30px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+._next .body-banner .image-body-banner img {
+  transform: scale(.9) translateY(20px);
+  
+}
+
+/* ? ========== Footer ========== */
+
+._next footer {
+  background: var(--Very-dark-black-blue);
+  border-radius: 0 var(--rounded) 0 0;
+}
+
+._next footer .footer-nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 150px;
+  padding: 50px 0;
+  
+}
+
+._next footer .footer-nav .footer-list {
+  list-style: none;
+  color     : var(--white)
+}
+
+._next footer .footer-nav .footer-list .item-footer-list a {
+  color: var(--whitet) !important;
+  text-decoration: none;
+  line-height: 38px;
+  font-size: 14px;
+
+}
+
+._next footer .footer-nav .footer-list .item-footer-list a:hover {
+  text-decoration: underline;
+}
+
+._next footer .footer-nav .footer-list .item-footer-list.title {
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+
+
+
+.attribution {
+  font-size : 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

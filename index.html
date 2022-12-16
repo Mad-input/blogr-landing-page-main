@@ -1,99 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./css/styles.css">
+
   <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
+
 <body>
-  Product
+  <div class="_next">
+    <header>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="list-item">
+            <div class="logo">
+              <img src="./images/logo.svg" alt="Logo">
+            </div>
+          </li>
+          <li class="list-item">
+            <a href="#">Product <img src="images/icon-arrow-light.svg" alt="arrow"></a>
+          </li>
+          <li class="list-item">
+            <a href="#">Company <img src="./images/icon-arrow-light.svg" alt="arrow"></a>
+          </li>
+          <li class="list-item">
+            <a href="#">Connect <img src="./images/icon-arrow-light.svg" alt="arrow"></a>
+            <ul class="submenu">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>Linkedin</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="btn-op">
+          <button class="btn btn-login">Login</button>
+          <button class="btn btn-sign">Sign Up</button>
+        </div>
+      </nav>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+      <div class="banner">
+        <p class="banner-text">
+          <strong>A modern publishing platform</strong>
+          Grow your audience your brand
+        </p>
+        <div class="banner-btns">
+          <button class="btn btn-banner btn-sign">Start for free</button>
+          <button class="btn btn-banner btn-learn">Learn More</button>
+        </div>
+      </div>
+    </header>
 
-  Company
+    <section class="section-1 section-body">
+      <h1 class="title-section heading">Designed for the future</h1>
+      <div class="content-section">
+        <p class="section-paragraph">
+          <span class="paragraph-title heading">Introducing an extessible editor</span>
+          Blogr features an esceedingle intuitive which lets you focus on one thing: creating content. The editor supports
+          management of videos, and Markdown. Extensibility with plugins and themes provide easy ways add functionality or
+          change the looks of a blog.
+        </p>
+        <div class="image-banner">
+          <img src="./images/illustration-editor-desktop.svg" alt="editor image">
+        </div>
+        <p class="section-paragraph">
+          <span class="paragraph-title heading">Robust content management</span>
+          Flexible content management enables users to easily move through posts. Increase the usability of your blog by
+          adding customized categories, sections, format, or flow. With this functionality. you`re in full control
+        </p>
+        
+      </div>
+    </section>
 
-  About
-  Team
-  Blog
-  Careers
+    <div class="body-banner">
+      <div class="image-body-banner">
+        <img src="./images/illustration-phones.svg" alt="phonesblog">
+      </div>
+      <p class="section-paragraph paragraph-body-banner">
+      <span class="paragraph-title heading">State of the Art Infrastructure</span>
+      Witd reliability and speed in mind, worwide data centers provide the backbone for ultra-fast connectivity. This
+      ensures your site will load instantly, no matter where your readers are, keeping your site competitive
+      </p>
+    </div>
 
-  Connect
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+    <section class="section-2 section-body">
+      
+      <div class="content-section">
+        
+        
+        
+        <div class="image-banner">
+          <img src="./images/illustration-laptop-desktop.svg" alt="editor image">
+        </div>
+        
+        <p class="section-paragraph">
+          <span class="paragraph-title heading">Free, open, simple</span>
+          Blogr features an esceedingle intuitive which lets you focus on one thing: creating content. The editor supports
+          management of videos, and Markdown. Extensibility with plugins and themes provide easy ways add functionality or
+          change the looks of a blog.
+        </p>
+        <p class="section-paragraph">
+        <span class="paragraph-title heading">Powerful tooling</span>
+        Flexible content management enables users to easily move through posts. Increase the usability of your blog by
+        adding customized categories, sections, format, or flow. With this functionality. you`re in full control
+        </p>
+      </div>
+    </section>
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+    <footer>
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li class="item-footer-list">
+            <img src="./images/logo.svg" alt="logo">
+          </li>
+        </ul>
 
-  Start for Free
-  Learn More
+        <ul class="footer-list">
+          <li class="item-footer-list title">Product</li>
+          <li class="item-footer-list">
+            <a href="#">Overview</a>
+          </li>
+          <li class="item-footer-list">
+            <a href="#">Pricing</a>
+          </li>
+          <li class="item-footer-list">
+            <a href="#">Marketplace</a>
+          </li>
+          <li class="item-footer-list">
+            <a href="#">Features</a>
+          </li>
+          <li class="item-footer-list">
+            <a href="#">Integrations</a>
+          </li>
+        </ul>
 
-  Designed for the future
+        <ul class="footer-list">
+          <li class="item-footer-list title">Company</li>
+          <li class="item-footer-list">
+            <a href="#">About</a>
+          </li>
+          <li class="item-footer-list">
+            <a href="#">Team</a>
+          </li>
+          <li class="item-footer-list">
+            <a href="#">Blog</a>
+          </li>
+          <li class="item-footer-list">
+            <a href="#">Careers</a>
+          </li>
+        </ul>
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
-
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
+        <ul class="footer-list">
+          <li class="item-footer-list title">Connect</li>
+          <li class="item-footer-list">
+            <a href="#">Contact</a>
+          </li>
+          <li class="item-footer-list">
+            <a href="#">Newsletter</a>
+          </li>
+          <li class="item-footer-list">
+            <a href="#">Linkedin</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Miguel Contreras</a>.
   </div>
 </body>
+
 </html>
