@@ -125,7 +125,7 @@
     height : 400px;
   }
 
-  ._next .navigation .nav-list {
+  ._next nav .nav-list {
     display: none;
   }
 
@@ -181,7 +181,7 @@
     margin-bottom: 1.5em;
   }
 
-  ._next .navigation .btn-op {
+  ._next nav .btn-op {
     display: none;
   }
 
