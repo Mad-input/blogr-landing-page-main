@@ -92,7 +92,20 @@
 
 @media screen and (max-width: 680px) {
   body {
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  ._next .banner .btn-banner {
+    width: 200px;
+    height: 40px;
+    font-size  : 1em;
+    margin: 10px;
+  }
+
+  ._next .body-banner {
+    background: url('../images/bg-pattern-circles.svg'),
+    linear-gradient(to top, var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
+
   }
 
   .nav-mobile.show {
