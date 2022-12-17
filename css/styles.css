@@ -14,13 +14,14 @@ body {
   min-height: 100vh;
   background: var(--white);
   overflow-x: hidden;
+  font-size: 16px
 }
 
 ._next header {
   background: url('../images/bg-pattern-intro-desktop.svg'),
     -moz-linear-gradient(to right, var(--Very-light-red), var(--light-red));
   background-position: center;
-  padding            : 50px;
+  padding            : 3.125em;
 
   border-radius: 0 0 0 var(--rounded);
 
@@ -45,6 +46,8 @@ body {
 
   width : 90%;
   margin: 0 auto;
+
+  position: relative;
 }
 
 ._next .nav .nav-list {
@@ -74,8 +77,8 @@ body {
 }
 
 ._next .nav .nav-list .list-item .submenu li {
-  line-height: 30px;
-  font-size: 14px;
+  line-height: 1.875em;
+  font-size: 0.875em;
   font-family: 'Ubuntu', sans-serif;
   cursor: pointer;
 }
@@ -90,16 +93,16 @@ body {
 }
 
 ._next .nav .nav-list .list-item .logo {
-  margin-right: 40px;
+  margin-right: 2.5em;
 }
 
 ._next .nav .nav-list .list-item .logo img {
-  width: 80px;
+  width: 5em;
 }
 
 ._next .nav .nav-list .list-item a {
   font-weight    : bold;
-  font-size      : 14px;
+  font-size      : 0.875em;
   text-decoration: none;
   color          : var(--white);
   opacity        : .7;
@@ -121,11 +124,11 @@ body {
 .btn {
   border       : none;
   border-radius: var(--rounded-btn);
-  width        : 120px;
-  height       : 40px;
+  width        : 7.5em;
+  height       : 2.5em;
 
   font-weight: bold;
-  font-size  : 13px;
+  font-size  : 0.9375em;
 
   color     : var(--white);
   cursor    : pointer;
@@ -150,24 +153,24 @@ body {
 /* ? ========== banner header ========== */
 
 ._next .banner {
-  margin: 50px 0;
-
+  margin: 3.125em 0;
+  /* font-size: 30px; */
 }
 
 ._next .banner .banner-text {
-  color      : #fff;
+  color      : var(--whitet);
   text-align : center;
-  font-size  : 18px;
+  font-size  : 1.25em;
   font-family: 'Overpass', sans-serif;
-  margin     : 20px;
+  margin     : 1.25em 0;
 }
 
 ._next .banner .banner-text strong {
   color      : #fff;
-  padding    : 20px 0;
+  padding    : 0.300em 0;
   font-weight: 300;
   display    : block;
-  font-size  : 50px;
+  font-size  : 2.4em;
 }
 
 ._next .banner .banner-btns {
@@ -185,12 +188,12 @@ body {
 }
 
 ._next .banner .btn-banner {
-  margin: 20px 10px;
+  margin: 1.25em 0.625em;
 }
 
 ._next .section-body {
-  margin: 50px 0;
-  padding: 70px 50px;
+  margin: 3.125em 0;
+  padding: 4.375em 3.125em;
 }
 
 ._next .section-body .content-section {
@@ -205,25 +208,25 @@ body {
 }
 
 ._next .section-1 .content-section .image-banner img {
-  width: 630px;
+  width: 39.375em;
   vertical-align: top;
   transform: scale(1.3) translateX(130px);
   /* margin-top: -66px; */
 }
 
 ._next .section-body .title-section {
-  font-family: 'overpass', sans-serif;
+  font-family: 'Overpass', sans-serif;
   text-align: center;
-  font-size: 30px;
+  font-size: 2.0625em;
   font-weight: bold;
 }
 
 ._next .section-body .content-section .section-paragraph {
-  font-size: 16px;
+  font-size: 1em;
   text-align: left;
-  line-height: 25px;
+  line-height: 1.5625em;
   color: var(--blackt);
-  padding: 0 50px;
+  padding: 0 3.125em;
   /* opacity: .7; */
 }
 
@@ -231,12 +234,12 @@ body {
 .content-section 
 .section-paragraph .paragraph-title {
   display: block;
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 1.5625em;
+  margin-bottom: 1.25em;
 }
 
 ._next .section-2 .content-section .image-banner img {
-  width: 630px;
+  width: 39.375em;
   vertical-align: top;
   transform: scale(1.3) translateX(-100px);
   /* margin-top: -66px; */
@@ -251,9 +254,10 @@ body {
   display: flex;
   align-items    : center;
   justify-content: center;
-  padding: 0 50px;
-  margin: 100px 0;
-  height: 370px;
+  flex-wrap: wrap;
+  padding: 0 3.125em;
+  margin: 6.25em 0;
+  height: fit-content;
 
   border-radius: 0 var(--rounded) 0 var(--rounded);
 }
@@ -261,23 +265,23 @@ body {
 ._next .body-banner .paragraph-body-banner {
   color: var(--whitet);
   font-family: 'Overpass', sans-serif;
-  width: 500px;
-  line-height: 25px;
-  margin-left: 20px;
+  width: 31.25em;
+  line-height: 1.5625em;
+  margin-left: 1.25em;
 }
 
 ._next .body-banner .paragraph-body-banner .paragraph-title {
   display: block;
-  font-size: 30px;
+  font-size: 1.875em;
   font-family: 'Overpass', sans-serif;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   color: var(--white);
 }
 
 ._next .body-banner .image-body-banner img {
-  transform: scale(.9) translateY(20px);
-  
+  transform: scale(1.4) translateX(-50px);
+  width: 400px;
 }
 
 /* ? ========== Footer ========== */
@@ -291,8 +295,9 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: 150px;
-  padding: 50px 0;
+  flex-wrap: wrap;
+  gap: 9.375em;
+  padding: 3.125em 0;
   
 }
 
@@ -304,8 +309,8 @@ body {
 ._next footer .footer-nav .footer-list .item-footer-list a {
   color: var(--whitet) !important;
   text-decoration: none;
-  line-height: 38px;
-  font-size: 14px;
+  line-height: 2.375em;
+  font-size: 0.875em;
 
 }
 
@@ -315,14 +320,14 @@ body {
 
 ._next footer .footer-nav .footer-list .item-footer-list.title {
   font-weight: 500;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625em;
 }
 
 
 
 
 .attribution {
-  font-size : 11px;
+  font-size : 0.6875em;
   text-align: center;
 }
 

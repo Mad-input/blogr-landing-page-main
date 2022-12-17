@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/stylesmobile.css">
 
   <title>Frontend Mentor | [Blogr]</title>
 
@@ -43,7 +44,34 @@
           <button class="btn btn-login">Login</button>
           <button class="btn btn-sign">Sign Up</button>
         </div>
+        <!--[if IE]>Mobile<![endif]-->
+
+        <div class="logo-mobile">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <button class="btn-nav-mobile" id="btnMenuMobile">
+          <img src="./images/icon-hamburger.svg" alt="logo">
+        </button>
+
+        <ul class="nav-mobile" id="navMobile">
+          <li class="item-list-mobile">Product <img src="./images/icon-arrow-dark.svg" alt="arrow"></li>
+          <li class="item-list-mobile">Company <img src="./images/icon-arrow-dark.svg" alt="arrow"></li>
+          <li class="item-list-mobile" data-menu="contact">
+            Connect <img src="./images/icon-arrow-dark.svg" alt="arrow">
+            <ul class="submenu-mobile" id="submenuMobile" data-menu="contact">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>Linkedin</li>
+            </ul>
+          </li>
+          <hr>
+          <div class="btns-mobile-nav">
+            <button class="btn btn-mobile btn-l">Login</button>
+            <button class="btn btn-mobile btn-s">Sign Up</button>
+          </div>
+        </ul>
       </nav>
+      
 
       <div class="banner">
         <p class="banner-text">
@@ -177,6 +205,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Miguel Contreras</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
