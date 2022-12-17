@@ -95,6 +95,7 @@
 @media screen and (max-width: 680px) {
   body {
     font-size: 12px;
+    overflow-x: hidden;
   }
 
   ._next .banner .banner-text strong {
