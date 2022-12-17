@@ -19,7 +19,7 @@ body {
 
 ._next header {
   background: url('../images/bg-pattern-intro-desktop.svg'),
-    -moz-linear-gradient(to right, var(--Very-light-red), var(--light-red));
+    linear-gradient(to right, var(--Very-light-red), var(--light-red));
   background-position: center;
   padding            : 3.125em;
 
@@ -247,7 +247,7 @@ body {
 
 ._next .body-banner {
   background: url('../images/bg-pattern-circles.svg'),
-    -moz-linear-gradient(to right, var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
+    linear-gradient(to right, var(--Very-dark-gray-blue), var(--Very-dark-desaturated-blue));
   background-repeat: no-repeat;
   background-position: left bottom;
 

@@ -86,7 +86,7 @@
 }
 
 .btns-mobile-nav .btn-mobile.btn-s {
-  background: -moz-linear-gradient(to right, var(--Very-light-red), var(--light-red));
+  background: linear-gradient(to right, var(--Very-light-red), var(--light-red));
   color     : var(--white);
 }
 
